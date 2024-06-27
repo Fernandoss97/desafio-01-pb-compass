@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   margin: 0;
@@ -16,6 +17,7 @@ body {
     rgba(57, 40, 159, 1) 0%,
     rgba(66, 47, 156, 1) 100%
   );
+  padding-inline: 120px;
 }
 
 a {
@@ -23,8 +25,13 @@ a {
 }
 
 header {
-  padding: 40px 55px;
+  background: linear-gradient(
+    100deg,
+    rgba(57, 40, 159, 1) 0%,
+    rgba(66, 47, 156, 1) 100%
+  );
   font-family: "Poppins";
+  padding: 40px 55px;
 }
 
 nav {
@@ -36,7 +43,7 @@ nav {
 
 .nav-list {
   display: flex;
-  gap: 88px;
+  gap: 80px;
   list-style: none;
 }
 
@@ -61,7 +68,6 @@ nav {
 
 .section-more-details {
   display: flex;
-  margin: 100px 0 0 150px;
 }
 
 .ct-more-detail-text {
@@ -70,6 +76,7 @@ nav {
   font-family: "Poppins";
   gap: 20px;
   max-width: 500px;
+  margin-top: 90px;
 }
 
 #section-subtitle {
@@ -105,9 +112,63 @@ nav {
 }
 
 .section-more-details img {
-  width: 750px;
-  height: 700px;
+  max-width: 550px;
+  height: 710px;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 0px;
+  right: 18.2%;
+}
+
+.section-currently-trending {
+  padding-block: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik";
+  color: #ffffff;
+}
+
+#text-currently-trending {
+  font-weight: bold;
+  font-size: 31px;
+}
+
+#bt-see-all {
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.ct-img-followers {
+  display: flex;
+  gap: 25px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.item p {
+  color: #ffffff;
+  font-family: "Rubik";
+  font-size: 22px;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+
+.item span img {
+  vertical-align: middle;
+  margin-right: 8px;
 }
