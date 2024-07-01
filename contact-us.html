@@ -88,10 +88,11 @@
         </div>
         <div id="ct-message">
           <label for="message">Message</label>
-          <input type="text" id="message">
+          <textarea name="" id="message"></textarea>
+          <p id="error-msg"></p>
         </div>
         <div id="ct-bt-get-in-touch">
-          <button>Get in touch</button>
+          <button type="submit" id="bt-get-in-touch">Get in touch</button>
         </div>
       </div>
     </div>
@@ -109,10 +110,11 @@
           <p>We promise not to spam you!</p>
         </div>
         <div id="input">
-          <input placeholder="Enter you email address" type="text">
-          <button>Continue</button>
+          <input id="emailAddress2" placeholder="Enter you email address" type="text">
+          <button id="bt-continue">Continue</button>
         </div>
       </div>
+      <p id="error-msg2"></p>
     </div>
   </section>
   <footer>
@@ -147,6 +149,7 @@
       <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
     </div>
   </footer>
+  <script src="/contact-us.js"></script>
 </body>
 
 </html>
