@@ -17,11 +17,7 @@ a {
 }
 
 #section-contact-us {
-  background: linear-gradient(
-    180deg,
-    rgba(34, 17, 231, 1) -50%,
-    rgba(56, 56, 55, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(34, 17, 231, 1) -50%, rgba(56, 56, 55, 1) 100%);
 }
 
 header {
@@ -249,9 +245,12 @@ nav {
   font-family: "Poppins";
 }
 
-#form input {
+#form input,
+#form textarea {
   background-color: rgba(56, 56, 55, 1);
   border: solid 0.1px #cecece;
+  color: #cecece;
+  font-family: "Poppins";
 }
 
 #form label {
@@ -286,9 +285,18 @@ nav {
   border-radius: 9px;
 }
 
-#ct-message input {
+#ct-message textarea {
   height: 232px;
   border-radius: 9px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  resize: none;
+  overflow: hidden;
+}
+
+#error-msg {
+  text-align: center;
+  color: tomato;
 }
 
 #ct-bt-get-in-touch {
@@ -305,14 +313,11 @@ nav {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 #section-contact {
-  background: linear-gradient(
-    180deg,
-    rgba(34, 17, 231, 1) -50%,
-    rgba(56, 56, 55, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(34, 17, 231, 1) -50%, rgba(56, 56, 55, 1) 100%);
   padding: 150px 120px;
 }
 
@@ -320,6 +325,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 75px;
+  position: relative;
 }
 
 #contact-text {
@@ -381,6 +387,7 @@ nav {
   box-sizing: border-box;
   border-radius: 8px;
   border: none;
+  color: #4f4f4f;
 }
 
 #input button {
@@ -394,6 +401,15 @@ nav {
   font-size: 13px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+#error-msg2 {
+  position: absolute;
+  bottom: 10%;
+  right: 29%;
+  color: tomato;
+  font-family: "Poppins";
 }
 
 footer {

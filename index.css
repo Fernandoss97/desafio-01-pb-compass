@@ -9,19 +9,11 @@
 html,
 body {
   height: 100%;
-  background: linear-gradient(
-    100deg,
-    rgba(60, 42, 158, 1) 0%,
-    rgba(59, 42, 159, 1) 100%
-  );
+  background: linear-gradient(100deg, rgba(60, 42, 158, 1) 0%, rgba(59, 42, 159, 1) 100%);
 }
 
 .main {
-  background: linear-gradient(
-    100deg,
-    rgba(57, 40, 159, 1) 0%,
-    rgba(66, 47, 156, 1) 100%
-  );
+  background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
   padding-inline: 120px;
 }
 
@@ -30,11 +22,7 @@ a {
 }
 
 header {
-  background: linear-gradient(
-    100deg,
-    rgba(57, 40, 159, 1) 0%,
-    rgba(66, 47, 156, 1) 100%
-  );
+  background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
   font-family: "Poppins";
   padding: 40px 55px;
 }
@@ -109,11 +97,7 @@ nav {
 }
 
 #bt-get-more-details {
-  background: linear-gradient(
-    100deg,
-    rgba(250, 131, 5, 1) 0%,
-    rgba(251, 158, 60, 1) 100%
-  );
+  background: linear-gradient(100deg, rgba(250, 131, 5, 1) 0%, rgba(251, 158, 60, 1) 100%);
   padding: 14px 30px;
   border-radius: 40px;
   color: #ffffff;
@@ -317,11 +301,7 @@ nav {
 }
 
 #recent-projects {
-  background: linear-gradient(
-    100deg,
-    rgba(60, 42, 158, 1) 0%,
-    rgba(59, 42, 159, 1) 100%
-  );
+  background: linear-gradient(100deg, rgba(60, 42, 158, 1) 0%, rgba(59, 42, 159, 1) 100%);
   padding-inline: 120px;
   box-sizing: border-box;
   padding-bottom: 163px;
@@ -410,6 +390,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 75px;
+  position: relative;
 }
 
 #contact-text {
@@ -471,6 +452,7 @@ nav {
   box-sizing: border-box;
   border-radius: 8px;
   border: none;
+  color: #4f4f4f;
 }
 
 #input button {
@@ -484,6 +466,15 @@ nav {
   font-size: 13px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+#error-msg2 {
+  position: absolute;
+  bottom: 10%;
+  right: 29%;
+  color: tomato;
+  font-family: "Poppins";
 }
 
 footer {
