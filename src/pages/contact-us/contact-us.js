@@ -54,7 +54,7 @@ const handleBtGetInTouch = () => {
   dataList.push(newData);
   localStorage.setItem("dataList", JSON.stringify(dataList));
 
-  window.location.href = "/home.html";
+  window.location.href = "/src/pages/succesful/succesful.html";
 };
 
 const handleForm = () => {
