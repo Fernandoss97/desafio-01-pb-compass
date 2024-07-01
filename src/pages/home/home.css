@@ -22,9 +22,10 @@ a {
 }
 
 header {
-  background: linear-gradient(100deg, rgba(57, 40, 159, 1) 0%, rgba(66, 47, 156, 1) 100%);
   font-family: "Poppins";
   padding: 40px 55px;
+  position: relative;
+  z-index: 1;
 }
 
 nav {
@@ -40,6 +41,11 @@ nav {
   list-style: none;
   position: relative;
 }
+
+.nav-list a {
+  cursor: pointer;
+}
+
 #home-decoration {
   position: absolute;
   bottom: -15px;
@@ -112,6 +118,7 @@ nav {
   position: absolute;
   top: 0px;
   right: 18.2%;
+  z-index: 0;
 }
 
 .section-currently-trending {
@@ -269,6 +276,12 @@ nav {
   flex-direction: column;
   gap: 50px;
 }
+
+#ct-services-items a {
+  text-decoration: none;
+  color: #dc7000;
+}
+
 #ct-services-1 {
   display: flex;
   justify-content: space-around;
